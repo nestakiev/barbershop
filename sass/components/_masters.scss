@@ -1,0 +1,129 @@
+.masters {
+    padding: 84px 0;
+    background: #F7F7F7;
+
+    @media screen and (min-width: 768px) {
+        padding: 100px 0;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 130px 0;
+    }
+}
+
+.masters__container {
+    max-width: 480px;
+    padding: 0 31px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        
+        max-width: 768px;
+        padding: 0 159px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        padding: 0 55px;
+    }
+}
+
+.masters__subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $blackText;
+    position: relative;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.masters__subtitle::before {
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    content: "";    
+    width: 60px;
+    height: 1px;
+    background-color: $blackText;
+}
+
+.masters__title {
+    color: $blackText;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    margin-bottom: 44px;
+}
+
+.masters__list {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+    }
+}
+
+.masters__item {
+    @media screen and (max-width: 1279px) {
+        margin-bottom: 64px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.masters__name {
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    color: $blackText;
+    margin: 30px 0 8px;
+}
+
+.masters__position {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    color: $accent;
+    margin-bottom: 30px;
+}
+
+.masters__social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.masters__social-item {
+    margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+}
+
+.masters__social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $whiteText;
+    
+}
+
+.masters__social-icon {
+    .masters__social-links:hover &,
+    .masters__social-links:focus & {
+        fill: $accent;
+    }
+}
+

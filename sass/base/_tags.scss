@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+        
+        
+    min-width: 320px;
+    overflow-x: scroll;
+
+    // &.modal-open {
+    //     overflow: hidden;
+    // }
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
